@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/books"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="center-android-title">
+      Añadir Libro
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form>
+    <!--Name of the book-->
+    <ion-item lines="none">
+      <ion-label position="stacked">Nombre del libro</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <!--Name of the book's author-->
+    <ion-item lines="none">
+      <ion-label position="stacked">Autor del Libro</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <!--Name of the book's owner-->
+    <ion-item lines="none">
+      <ion-label position="stacked">Dueño del Libro</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <!--Location of the book-->
+    <ion-item lines="none">
+      <ion-label position="stacked">Lugar del Libro</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </form>
+  <div class="save">
+    <ion-button expand="round">Guardar</ion-button>
+  </div>
+</ion-content>

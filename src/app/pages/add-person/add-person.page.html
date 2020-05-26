@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab3"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Añadir Persona</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <!--Person's Name-->
+    <ion-item lines="none">
+      <ion-label position="stacked">Nombre de la Persona</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <!--Person's middlename-->
+    <ion-item lines="none">
+      <ion-label position="stacked">Segundo Nombre de la Persona</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <!--Person's lastname-->
+    <ion-item lines="none">
+      <ion-label position="stacked">Apellido de la Persona</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <!--Person's condition-->
+    <ion-item lines="none">
+      <ion-label>Escritor</ion-label>
+      <ion-toggle checked></ion-toggle>
+    </ion-item>
+  </form>
+  <div class="save">
+    <ion-button expand="round">Guardar</ion-button>
+  </div>
+</ion-content>
