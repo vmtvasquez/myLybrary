@@ -8,11 +8,15 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
+        path: 'home',
+        loadChildren: () => import('../pages/home/home.module').then(m => m.HomePageModule)
+      },
+      {
         path: 'books',
         loadChildren: () => import('../pages/books/tab2.module').then(m => m.Tab2PageModule)
       },
       {
-        path: 'person',
+        path: 'author',
         loadChildren: () => import('../pages/person/person.module').then(m => m.PersonPageModule)
       },
       {
@@ -21,14 +25,14 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/books',
+        redirectTo: '/tabs/home',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/books',
+    redirectTo: '/tabs/home',
     pathMatch: 'full'
   }
 ];
